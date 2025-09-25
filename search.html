@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- import fonts from Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Bebas+Neue&family=El+Messiri&family=Libre+Caslon+Display&family=Lora:ital@1&family=Noto+Serif+Display:ital,wght@1,400;1,600&family=Roboto+Serif:opsz@8..144&display=swap"
+    rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Search</title>
+<link href="browse.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<center>
+    <div class="container">
+    <div class="title">
+        <h1> Search</h1>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navBar"> 
+        <a href="index.html"> <button class="home">Home</button></a>
+        <a href="browse.html"> <button class="browseNav">Browse Spots</button></a>
+        <a href="search.html"><button class="search">Search</button></a>
+        <a href="about.html"><button class="about">About</button></a>
+    </div>
+    <!-- Want from this dropdown menu: 
+        if an option is not selected, show all (is that the default?) 
+        Conditional selection, if "off campus" option is selected, show the "distance from campus" picker-->
+    <form action="url goes here">
+        <select name="Location">
+            <option value="indoor">Indoor</option>
+            <option value="outdoor">Outdoor</option>
+        </select>
+        <select name="Focus Level">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <select name="On/Off Campus">
+            <option value="on campus">On Campus</option>
+            <option value="off campus">Off Campus</option>
+        </select>
+        <!-- if selection = off-campus, distance from campus option should pop up? -->
+        <input type="submit" value="Go"/>
+
+    </form>
+    
+    </div>
+</center>
+
+
+
+</body>
+
+</html>

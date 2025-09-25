@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #d7e8ba;
+}
+
+.title {
+  font-size: 50px;
+  background: #9AB36D;
+  font-family: 'Plus Jakarta Sans', serif;
+  font-weight: 300;
+  color: #611C35;
+  height: 220px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sheet {
+  border: white;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  font-family: 'Assistant', sans-serif;
+
+
+}
+
+button {
+  border: white;
+  background: none;
+}
+
+.navBar-content {
+  color: #000000;
+
+}
+
+.navBar:hover {
+  background: #9AB36D;
+  color: #CE713B;
+}
