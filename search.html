@@ -20,7 +20,7 @@
 </head>
 
 <body>
-<center>
+
     <div class="container">
     <div class="title">
         <h1> Search</h1>
@@ -35,15 +35,40 @@
     <!-- Want from this dropdown menu: 
         if an option is not selected, show all (is that the default?) 
         Conditional selection, if "off campus" option is selected, show the "distance from campus" picker-->
-    
+
+        <div class="form-group">
+            <label for="location" class="control-label col-sm-2">Location:</label>
+            <div class="col-sm-3">
+                <select class="form-control" id="location">
+                    <option value="on">On Campus</option>
+                    <option value="walking">Walking Distance From Campus</option>
+                    <option value="driving">Driving Distance From Campus</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="focus-level" class="control-label col-sm-2">Focus Level:</label>
+            <div class="col-sm-3">
+                <select class="form-control" id="focus-level">
+                    <option value="1">Social/Casual Work</option>
+                    <option value="2">Quiet Work With Friends</option>
+                    <option value="3">Quiet Work Alone</option>
+                    <option value="4">Silent Work Alone</option>
+            </div>
+        </div>
+            <div class="form-group">
+                <label for="in-out" class="control-label col-sm-2">Indoor/Outdoor: </label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="in-out">
+                        <option value="in">Indoor</option>
+                        <option value="out">Outdoor</option>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary" id="go">Go</button>
+            </div>
 
 
-    
-    </div>
-</center>
-
-
-
+            <script src="search.js"></script>
 </body>
-
 </html>
