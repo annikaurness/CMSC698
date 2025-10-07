@@ -42,8 +42,9 @@ button {
   color: #000000;
 
 }
-
+.navBar-content:hover{
+  color: #CE713B;
+}
 .navBar:hover {
   background: #9AB36D;
-  color: #CE713B;
 }
