@@ -1,0 +1,34 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #d7e8ba;
+}
+.title {
+    font-size: 50px;
+    font-family: 'Plus Jakarta Sans', serif;
+    font-weight: 300;
+    color: #611C35;
+    background: #9AB36D;
+    height: 220px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    border: white;
+    background: none;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.navBar-content {
+    color: #000000;
+}
