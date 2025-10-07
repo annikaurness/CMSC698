@@ -1,0 +1,38 @@
+Name,On/Off Campus,Indoor/Outdoor,Focus Level,Distance from campus,Description,Tags,"Website function: suggest study spots and recommend music based on criteria: noise level, location, etc"
+Library 3rd Floor Q group table,on,Indoor ,2,N/A,"Nice and tucked away, good to work with a small group of friends. Sometimes this spot gets snapped up fast. ",,"Want user to be able to sort and filter spots by location (indoor/outdoor), on/off campus, distance from campus, noise level"
+Main Green,on,Outdoor,1,N/A,Good to do readings or light work outside with friends.,Sunny,"Maybe rank focus level on a scale? 1 = casual study hang out with friends, 4 = i don't want to be disturbed at all I really need to get stuff done"
+Milwaukee-Downer room,on,Indoor ,3,N/A,"Pretty wood bookshelves and details, cozy couches",,1: looking to casually study with friends or work on a project in a group
+Steitz Atrium,on,Indoor ,2,N/A,"Lots of light, can be nice and warm in the winter because of the windows",Sunny,2: Looking to study quietly with friends 
+Il Bar Coffee,off,Indoor/Outdoor,2,Walking,The bar seating by the window is nice ,Coffee shop,3: Looking to study quietly but I don't mind talking with people passing through
+Library 1st Floor tables,on,Indoor ,1,N/A,Good for group projects. ,,4: I want a silent and more private space to study alone
+Warch 4th floor,on,Indoor ,3,N/A,"Nice individual desks, group tables, and armchairs",,
+Copper Rock,off,Indoor ,2,Walking,"If you can get one, the booths are great for studying with friends. ",Coffee shop,
+Hiett common areas,on,Indoor ,3,N/A,"Big south-facing windows, nice in the winter to get some sunlight. ",Sunny,
+Library 4th Floor Kruse Room,on,Indoor ,3,N/A,Good sunlight,Sunny,
+Lincoln Reading Room,on,Indoor ,2,N/A,"Big pretty windows, gorgeous in the fall. No food allowed in here, don't bring snacks",Sunny,
+Library 4th Floor Carrels,on,Indoor ,4,N/A,"Silent study by yourself, good for if you want to block out distractions. ",,
+Cafe,on,Indoor ,2,N/A,"Can get loud and busy around mealtimes, but the seats by the window are nice to work with outlets nearby– also great people-watching",Coffee shop,
+Briggs lobby,on,Indoor ,3,N/A,Nice view of the river. Good to sit and study during office hours in case you get stuck. ,Sunny,
+West Campus 2nd Floor,on,Indoor ,3,N/A,Big window that looks right out over the LU Arch,,
+Commodore Cafe,off,Indoor ,2,Walking,,Coffee shop,
+Colman lobby,on,Indoor ,2,N/A,,,
+Brewed Awakenings,off,Indoor/Outdoor,2,Walking,,Coffee shop,
+Warch patio,on,Outdoor,2,N/A,"Seasonal, they take these away in the winter. Tables v wobbly but nice when it's nice out ",,
+Library 2nd floor/CAS,on,Indoor ,2,N/A,"Math tutoring here, nice group tables",,
+Uncle Mike's Food Emporium,off,Indoor/Outdoor,2,Driving,"Good place to get food, outdoor patio on the restaurant part is v nice",Coffee shop,
+Youngchild 121,on,Indoor ,2,N/A,,,
+Librart 2nd Floor QRC,on,Indoor ,3,N/A,Math and computer science tutoring here,,
+Library patio,on,Outdoor,2,N/A,,,
+Youngchild Environmental Commons,on,Indoor ,3,N/A,Basically an empty classroom. Good for quiet homework with a couple friends,,
+West Campus Computer Science/Math commons ,on,Indoor ,3,N/A,Cool booths and stuff here and nice and quiet,,
+Warch Somerset room,on,Indoor ,3,N/A,Awesome windows with a nice view of the river,,
+Coffee Wizardz,off,Indoor ,2,Walking,,Coffee shop,
+Tempest Coffee,off,Indoor/Outdoor,2,Walking,,Coffee shop,
+Memorial Hall Diversity Equity & Inclusion Center ,on,Indoor ,2,N/A,Awesome couches and very cozy in the winter,Sunny,
+Library viewing/listening rooms,on,Indoor ,4,N/A,"Little rooms that require ID access, good for if you need total quiet ",,
+Library Level A,on,Indoor ,3,N/A,"Limited spots, but there's a couple of nice group tables. Level A has the periodicals collection, so it's generally nice and quiet.",,
+Bubolz Nature Preserve,off,Indoor/Outdoor,3,Driving,"Beautiful hiking/walking trails, and indoor study spaces in ""The Lodge""",,
+Appleton Public Library,off,Indoor ,3,Walking,"Recently renovated, really nice new spaces. ",,
+Main hall reading room,on,Indoor ,2,N/A,,,
+Spirit House,on,Indoor ,2,N/A,"Nice to study in a ""house house""",Sunny ,
+Conservatory couches,on,Indoor ,1,N/A,"Comfy and social, good place to study between classes/lessons in the con",,
