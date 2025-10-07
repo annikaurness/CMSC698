@@ -32,6 +32,10 @@ button {
 .navBar-content {
     color: #000000;
 }
+.navBar:hover { 
+    background: #9AB36D;
+    color: #CE713B;
+}
 .hook{
     font-family: 'Plus Jakarta Sans', serif;
 }

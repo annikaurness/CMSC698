@@ -33,10 +33,10 @@ body {
 
 }
 
-button {
+/* button {
   border: white;
   background: none;
-}
+} */
 
 .navBar-content {
   color: #000000;
@@ -47,4 +47,8 @@ button {
 }
 .navBar:hover {
   background: #9AB36D;
+}
+
+.goBtn{
+  background: #0dfbff;
 }
