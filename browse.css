@@ -22,6 +22,7 @@ body {
 
 .sheet {
     border: white;
+    font-family: 'Plus Jakarta Sans', serif;
 }
 
 .navBar {
@@ -48,7 +49,14 @@ button {
     color: #CE713B;
 }
 
-.playlist{
+.playlists{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.list{
+    font-family: 'Plus Jakarta Sans', serif;
+    color: #611C35;
 }
