@@ -47,3 +47,8 @@ button {
     background: #9AB36D;
     color: #CE713B;
 }
+
+.playlist{
+    display: flex;
+    flex-direction: column;
+}
