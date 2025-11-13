@@ -6,18 +6,30 @@ body {
 }
 
 .title {
-  font-size: 50px;
+  font-size: 150px;
   background: #9AB36D;
   font-family: 'Plus Jakarta Sans', serif;
   font-weight: 300;
   color: #611C35;
   height: 220px;
+  display: flex;
+  align-items: center;      /* vertically center text */
+  justify-content: center;  /* horizontally center text */
+  margin: 0;                /* remove Bootstrap’s spacing */
+  padding: 0;
 }
+
+.h1 {
+  margin: 0;               
+  font-size: 200px;      
+
+}
+
 
 .container {
   display: flex;
   flex-direction:column;
-
+  width: 100%;
 }
 
 .sheet {
