@@ -2,15 +2,15 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #d7e8ba;
+    background-color: #ce793a;
 }
 
 .title {
     font-size: 50px;
-    background: #9AB36D;
     font-family: 'Plus Jakarta Sans', serif;
     font-weight: 300;
-    color: #611C35;
+    color: #e5d1a4;
+    background: #b64b12;
     height: 220px;
 }
 
@@ -45,7 +45,7 @@ button {
 }
 
 .navBar:hover { 
-    background: #9AB36D;
+    background: #b64b12;
     color: #CE713B;
 }
 

@@ -2,21 +2,16 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #d7e8ba;
+  background-color: #ce793a;
 }
 
 .title {
-  font-size: 150px;
-  background: #9AB36D;
+  font-size: 50px;
   font-family: 'Plus Jakarta Sans', serif;
   font-weight: 300;
-  color: #611C35;
+  color: #e5d1a4;
+  background: #b64b12;
   height: 220px;
-  display: flex;
-  align-items: center;      /* vertically center text */
-  justify-content: center;  /* horizontally center text */
-  margin: 0;                /* remove Bootstrap’s spacing */
-  padding: 0;
 }
 
 .h1 {
