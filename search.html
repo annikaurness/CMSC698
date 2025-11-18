@@ -78,7 +78,33 @@
             </div>
             </div>
 
-
+            <h2>Spreadsheet Data</h2>
+            <table id="sheetTable"></table>
+            
+            <script>
+              fetch('/sheet')
+                .then(res => res.json())
+                .then(data => {
+                  const table = document.getElementById('sheetTable');
+            
+                  // If no data, stop
+                  if (!data.length) {
+                    table.innerHTML = "<tr><td>No data found</td></tr>";
+                    return;
+                  }
+            
+                  // Create table header from object keys
+                  const headers = Object.keys(data[0]);
+                  let thead = "<tr>" + headers.map(h => `<th>${h}</th>`).join("") + "</tr>";
+            
+                  // Create table rows
+                  let tbody = data.map(row => {
+                    return "<tr>" + headers.map(h => `<td>${row[h]}</td>`).join("") + "</tr>";
+                  }).join("");
+            
+                  table.innerHTML = thead + tbody;
+                });
+            </script>
 <script src="search.js"></script>
 </body>
 </html>
