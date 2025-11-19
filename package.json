@@ -1,5 +1,24 @@
 {
+  "name": "cmsc698",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/annikaurness/CMSC698#readme",
+  "bugs": {
+    "url": "https://github.com/annikaurness/CMSC698/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annikaurness/CMSC698.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "browse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "google-spreadsheet": "^5.0.2"
+    "google-spreadsheet": "^5.0.2",
+    "googleapis": "^166.0.0"
   }
 }

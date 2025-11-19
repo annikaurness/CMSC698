@@ -1,23 +1,41 @@
 // Assuming you have initialized the Google API client and authenticated
-
-const { GoogleSpreadsheet } = require('google-spreadsheet');
-const creds = require('.study-buddy-477821-5207d4afcac2.json');
+const { google } = require('googleapis');
+const keys = require('./sbKeys.json');
 const spreadsheetId = '1CTpUYJJzbvVK463Ozf0gL4ejmGPxdvL4ilh4YU9lDrA';
 const range = 'Study_Spots!A1:G44'; 
 
-gapi.client.sheets.spreadsheets.values.get({
-  spreadsheetId: spreadsheetId,
-  range: range
-}).then(function(response) {
-  const values = response.result.values;
-  if (values && values.length > 0) {
-    console.log('Data fetched successfully:');
-    values.forEach(function(row) {
-      console.log(row.join(', ')); // Display each row
-    });
-  } else {
-    console.log('No data found.');
+
+const client = new google.auth.JWT(
+  keys.client_email,
+  null, 
+  keys.private_key, 
+  ['https://www.googleapis.com/auth/spreadsheets']
+);
+
+client.authorize(function(err,tokens){
+
+  if(err){
+      console.log(err);
+      return;
+  }else{
+      console.log('Connected!');
+      gsrun(client);
   }
-}, function(reason) {
-  console.error('Error fetching data: ' + reason.result.error.message);
+
 });
+async function gsrun(cl){
+
+  const gsapi = google.sheets({version: 'v4',auth:cl});
+  const opt = {
+      spreadsheetId: '1CTpUYJJzbvVK463Ozf0gL4ejmGPxdvL4ilh4YU9lDrA',
+      range: 'Study_Spots!A2:D14'
+  };
+
+  let data = await gsapi.spreadsheets.values.get(opt);
+  let dataArray = data.data.values;
+  let newDataArray = dataArray.map(function(r){
+  r.push(r[0]+' my code works');
+  return r;
+  });
+  console.log(newDataArray);
+}
