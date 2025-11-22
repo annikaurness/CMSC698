@@ -20,7 +20,8 @@ client.authorize(function(err,tokens){
       return;
   }else{
       console.log('Connected!');
-      gsrun(client);
+      let spots =gsrun(client);
+      displayItems(spots);
   }
 
 });
@@ -35,13 +36,27 @@ client.authorize(function(err,tokens){
   let data = await gsapi.spreadsheets.values.get(opt);
   let dataArray = data.data.values;
   let newDataArray = dataArray.map(function(r){
-  r.push(r[0]+' my code works');
   return r;
   });
   return newDataArray;
 }
 
+
 app.get('/data', async (req, res) => {
   const data = await gsrun(client);
   res.json(data);
 });
+
+function displayItems(items) {
+  // Remove any existing entries from the table
+  let tableBody = document.getElementById('spots');
+  tableBody.innerHTML = '';
+
+  // Add new rows for the items in the list
+  let length = items.length;
+  for(let n = 0;n < length;n++) {
+    let newRow = document.createElement('tr');
+		newRow.innerHTML = '<td class="align-middle">'+items[n].name+'</td><td class="align-middle">$'+items[n].cost/100+'</td>';
+    
+  }
+}

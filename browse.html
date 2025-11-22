@@ -35,29 +35,14 @@
     </div>
   </center>
 
-  <h2>Google Sheet Data</h2>
-    <script>
-      async function loadData() {
-          const res = await fetch('/data');
-          const rows = await res.json();
-      
-          const table = document.getElementById("data-table");
-      
-          rows.forEach(row => {
-              const tr = document.createElement("tr");
-      
-              row.forEach(cell => {
-                  const td = document.createElement("td");
-                  td.textContent = cell;
-                  tr.appendChild(td);
-              });
-      
-              table.appendChild(tr);
-          });
-      }
-      
-      loadData();
-      </script>
+  <table class="table table-centered">
+    <thead>
+      <tr><th>Name</th><th>On/Off Campus</th><th>Indoor/Outdoor</th><th>Focus Level</th><th>Distance From Campus</th><th>Description</th><th>Tags</th></tr>
+    </thead>
+    <tbody id="spots">
+      <!-- Empty table body - JavaScript will fill this in -->
+    </tbody>
+  </table>
       
   <div class = "playlists">
       <div class = "list">
