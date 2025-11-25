@@ -5,20 +5,24 @@ body {
   background-color: #ce793a;
 }
 
-.my-title {
-  font-size: 50px;
-  font-family: 'Plus Jakarta Sans', serif !important;
-  font-weight: 300 !important;
+.title {
+  font-family: 'Plus Jakarta Sans', sans-serif !important; /* use sans-serif fallback */
+  font-weight: 700;
   color: #e5d1a4;
-  background: #b64b12;
-  height: 220px !important;
+  background-color: #b64b12;
+  width: 100vw;       /* full viewport width */
+  height: 220px;
+  display: flex;       /* center the text vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  margin: 0;          /* remove extra spacing */
 }
 
-.h1 {
-  margin: 0;               
-  font-size: 200px;      
-
+.title h1 {
+  margin: 0;          
+  font-size: 100px;   
 }
+
 
 
 .my-container {
@@ -39,11 +43,10 @@ body {
 
 
 }
-
-/* button {
+button {
   border: white;
   background: none;
-} */
+}
 
 .navBar-content {
   color: #000000;
@@ -52,7 +55,8 @@ body {
 .navBar-content:hover{
   color: #CE713B;
 }
-.navBar:hover {
-  background: #9AB36D;
+.navBar:hover { 
+  background: #b64b12;
+  color: #CE713B;
 }
 
