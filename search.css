@@ -6,7 +6,7 @@ body {
 }
 
 .title {
-  font-family: 'Plus Jakarta Sans', sans-serif !important; /* use sans-serif fallback */
+  font-family: 'Plus Jakarta Sans', serif; /* use sans-serif fallback */
   font-weight: 700;
   color: #e5d1a4;
   background-color: #b64b12;
@@ -20,7 +20,8 @@ body {
 
 .title h1 {
   margin: 0;          
-  font-size: 100px;   
+  font-size: 100px;  
+  font-weight: 700; 
 }
 
 
