@@ -5,13 +5,10 @@ body {
   background-color: #ce793a;
 }
 
-/* .header-image {
-  margin: 0px;
-  display: block;
-  height: 50px;
-  width: 100%;
+img {
+  height: 200px;
+}
 
-} */
 a {
   text-decoration: none;
 }
@@ -37,7 +34,11 @@ button {
 }
 
 
-
+.picture {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
 
 .navBar {
   display: flex;

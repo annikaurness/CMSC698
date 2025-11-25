@@ -21,7 +21,14 @@ button {
     border: white;
     background: none;
 }
-
+img {
+    height: 500px;
+}
+.picture {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
 .navBar {
     display: flex;
     justify-content: space-around;
