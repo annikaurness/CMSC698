@@ -1,8 +1,10 @@
 // Assuming you have initialized the Google API client and authenticated
-const {google} = require('googleapis');
-const keys = require('./sbKeys.json')
-const express = require('express')
-const app = express()
+import { google } from 'googleapis';
+import { readFileSync } from 'fs';
+const keys = JSON.parse(readFileSync('./sbKeys.json', 'utf8'));
+import express from 'express';
+import { JSDOM } from "jsdom";
+const app = express();
 
 //type "node browse.js" in the terminal to connect
 const client = new google.auth.JWT(
@@ -49,14 +51,18 @@ app.get('/data', async (req, res) => {
 
 function displayItems(items) {
   // Remove any existing entries from the table
+  const dom = new JSDOM(`<!DOCTYPE html><table id="spots"></table>`);
+  const document = dom.window.document;
+  
   let tableBody = document.getElementById('spots');
-  tableBody.innerHTML = '';
+  console.log(tableBody);
 
   // Add new rows for the items in the list
   let length = items.length;
   for(let n = 0;n < length;n++) {
     let newRow = document.createElement('tr');
-		newRow.innerHTML = '<td class="align-middle">'+items[n].name+'</td><td class="align-middle">$'+items[n].cost/100+'</td>';
+		newRow.innerHTML = '<td class="align-middle">'+items[n].name+'</td><td class="align-middle">$'+items[n].location+'</td><td class="align-middle">$'+items[n].focus+'</td><td class="align-middle">$'
+    +items[n].distance+'</td><td class="align-middle">$'+items[n].description+'</td><td class="align-middle">$'+items[n].tags+'</td>';
     
   }
 }
