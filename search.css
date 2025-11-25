@@ -5,13 +5,13 @@ body {
   background-color: #ce793a;
 }
 
-.title {
+.my-title {
   font-size: 50px;
-  font-family: 'Plus Jakarta Sans', serif;
-  font-weight: 300;
+  font-family: 'Plus Jakarta Sans', serif !important;
+  font-weight: 300 !important;
   color: #e5d1a4;
   background: #b64b12;
-  height: 220px;
+  height: 220px !important;
 }
 
 .h1 {
@@ -21,7 +21,7 @@ body {
 }
 
 
-.container {
+.my-container {
   display: flex;
   flex-direction:column;
   width: 100%;
@@ -56,6 +56,3 @@ body {
   background: #9AB36D;
 }
 
-.goBtn{
-  background: #0dfbff;
-}

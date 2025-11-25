@@ -61,8 +61,8 @@ function displayItems(items) {
   let length = items.length;
   for(let n = 0;n < length;n++) {
     let newRow = document.createElement('tr');
-		newRow.innerHTML = '<td class="align-middle">'+items[n].name+'</td><td class="align-middle">$'+items[n].location+'</td><td class="align-middle">$'+items[n].focus+'</td><td class="align-middle">$'
-    +items[n].distance+'</td><td class="align-middle">$'+items[n].description+'</td><td class="align-middle">$'+items[n].tags+'</td>';
+		newRow.innerHTML = '<td class="align-middle">'+items[n][0]+'</td><td class="align-middle">$'+items[n][1]+'</td><td class="align-middle">$'+items[n][2]+'</td><td class="align-middle">$'
+    +items[n][3]+'</td><td class="align-middle">$'+items[n][4]+'</td><td class="align-middle">$'+items[n][5]+'</td>';
     
   }
 }
