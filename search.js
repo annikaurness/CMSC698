@@ -1,5 +1,4 @@
 
-// Assuming you have initialized the Google API client and authenticated
 import { google } from 'googleapis';
 import { readFileSync } from 'fs';
 const keys = JSON.parse(readFileSync('./sbKeys.json', 'utf8'));

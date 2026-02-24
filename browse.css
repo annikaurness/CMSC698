@@ -2,7 +2,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #ce793a;
+    background-color: #fcf2eb;
 }
 
 .title {
@@ -10,7 +10,7 @@ body {
     font-family: 'Plus Jakarta Sans', serif;
     font-weight: 300;
     color: #e5d1a4;
-    background: #b64b12;
+    background: #ce793a;
     height: 220px;
 }
 

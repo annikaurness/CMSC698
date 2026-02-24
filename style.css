@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #ce793a;
+  background-color: #fcf2eb;
 }
 
 img {
@@ -24,7 +24,7 @@ a {
   font-family: 'Plus Jakarta Sans', serif;
   font-weight: 300;
   color: #e5d1a4;
-  background: #b64b12;
+  background:#ce793a;
   height: 220px;
 }
 
@@ -34,10 +34,15 @@ button {
 }
 
 
-.picture {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 20px;
+#carouselExampleControls {
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+#carouselExampleControls img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .navBar {
