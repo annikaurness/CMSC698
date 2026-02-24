@@ -10,7 +10,7 @@ body {
     font-family: 'Plus Jakarta Sans', serif;
     font-weight: 300;
     color: #e5d1a4;
-    background: #ce793a;
+    background: #13206e;
     height: 220px;
 }
 
@@ -45,7 +45,7 @@ button {
 }
 
 .navBar:hover { 
-    background: #b64b12;
+    background: #13206e;
     color: #CE713B;
 }
 

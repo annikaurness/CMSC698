@@ -9,7 +9,7 @@ body {
   font-family: 'Plus Jakarta Sans', serif; /* use sans-serif fallback */
   font-weight: 700;
   color: #e5d1a4;
-  background-color: #ce793a;
+  background-color: #13206e;
   width: 100vw;       /* full viewport width */
   height: 220px;
   display: flex;       /* center the text vertically and horizontally */
@@ -57,7 +57,7 @@ button {
   color: #CE713B;
 }
 .navBar:hover { 
-  background: #b64b12;
+  background: #13206e
   color: #CE713B;
 }
 
