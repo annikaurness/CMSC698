@@ -2,15 +2,15 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #fcf2eb;
+    background-color: #000000;
 }
 
 .title {
     font-size: 50px;
     font-family: 'Plus Jakarta Sans', serif;
     font-weight: 300;
-    color: #e5d1a4;
-    background: #13206e;
+    color: #000000;
+    background:#efeee7;
     height: 220px;
 }
 
@@ -40,14 +40,14 @@ button {
 }
 
 .navBar-content {
+    color: #efeee7;
+
+}
+
+.navBar:hover {
+    background:#efeee7;
     color: #000000;
-
-}
-
-.navBar:hover { 
-    background: #13206e;
-    color: #CE713B;
-}
+  }
 
 .playlists{
     display: flex;
@@ -58,5 +58,5 @@ button {
 
 .list{
     font-family: 'Plus Jakarta Sans', serif;
-    color: #611C35;
+    color: #efeee7;
 }

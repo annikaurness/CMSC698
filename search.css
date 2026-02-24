@@ -2,14 +2,14 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #fcf2eb;
+  background-color: #000000;
 }
 
 .title {
   font-family: 'Plus Jakarta Sans', serif; /* use sans-serif fallback */
   font-weight: 700;
-  color: #e5d1a4;
-  background-color: #13206e;
+  color: #000000;
+  background:#efeee7;
   width: 100vw;       /* full viewport width */
   height: 220px;
   display: flex;       /* center the text vertically and horizontally */
@@ -50,13 +50,12 @@ button {
 }
 
 .navBar-content {
-  color: #000000;
+  color: #efeee7;
 
 }
-.navBar-content:hover{
-  color: #CE713B;
-}
-.navBar:hover { 
-  background: #13206e;
+
+.navBar:hover {
+  background:#efeee7;
+  color: #000000;
 }
 

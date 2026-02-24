@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #fcf2eb;
+  background-color: #000000;
 }
 
 img {
@@ -23,8 +23,8 @@ a {
   font-size: 50px;
   font-family: 'Plus Jakarta Sans', serif;
   font-weight: 300;
-  color: #e5d1a4;
-  background:#13206e;
+  color:#000000;
+  background:#efeee7;
   height: 220px;
 }
 
@@ -50,22 +50,26 @@ button {
   justify-content: space-around;
   padding: 40px;
   font-family: 'Assistant', sans-serif;
-
-
+  background: #000000;
+  color: #efeee7;
 }
 
-.navBar-content {
-  color: #000000;
-
+.navBar a {
+  color: #efeee7;
+  text-decoration: none;
 }
 
 .navBar:hover {
-  background:#13206e;
-  color: #CE713B;
+  background:#efeee7;
+}
+
+.navBar:hover a {
+  color: #000000;
 }
 
 .intro {
-  font-family: 'Noto Serif Display', serif;
+  font-family: 'Plus Jakarta Sans', serif;
+  color: #efeee7;
 }
 
 /* .browse {
@@ -80,6 +84,6 @@ button {
   border-radius: 10px;
 } */
 
-.browse:hover {
+/* .browse:hover {
   background-color: #57789F;
-}
+} */
