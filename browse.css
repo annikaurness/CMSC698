@@ -3,6 +3,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: #000000;
+    color: #efeee7;
 }
 
 .title {
@@ -20,9 +21,9 @@ body {
 
 }
 
-.sheet {
-    border: white;
-    font-family: 'Plus Jakarta Sans', serif;
+.table {
+    color: #efeee7;
+    font-family: 'Assistant', sans-serif;  
 }
 
 .navBar {
@@ -39,15 +40,18 @@ button {
     background: none;
 }
 
-.navBar-content {
+.navBar a {
     color: #efeee7;
-
+    text-decoration: none;
 }
 
 .navBar:hover {
     background:#efeee7;
+}
+
+.navBar:hover a {
     color: #000000;
-  }
+}
 
 .playlists{
     display: flex;
@@ -56,7 +60,3 @@ button {
     justify-content: space-around;
 }
 
-.list{
-    font-family: 'Plus Jakarta Sans', serif;
-    color: #efeee7;
-}

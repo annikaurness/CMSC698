@@ -49,13 +49,16 @@ button {
   background: none;
 }
 
-.navBar-content {
+.navBar a {
   color: #efeee7;
-
+  text-decoration: none;
 }
 
 .navBar:hover {
   background:#efeee7;
+}
+
+.navBar:hover a {
   color: #000000;
 }
 

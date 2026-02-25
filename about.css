@@ -17,10 +17,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-button {
+/* button {
     border: white;
     background: none;
-}
+} */
 img {
     height: 500px;
 }
@@ -36,11 +36,16 @@ img {
     font-family: 'Assistant', sans-serif;
 }
 
-.navBar-content {
+.navBar a {
     color: #efeee7;
+    text-decoration: none;
 }
+
 .navBar:hover {
     background:#efeee7;
+}
+
+.navBar:hover a {
     color: #000000;
 }
 .hook{
