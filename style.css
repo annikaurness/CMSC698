@@ -13,13 +13,13 @@ a {
   text-decoration: none;
 }
 
-.container {
+.Tcontainer {
   display: flex;
   flex-direction: column;
 
 }
 
-.title {
+.myTitle {
   font-size: 50px;
   font-family: 'Plus Jakarta Sans', serif;
   font-weight: 300;
