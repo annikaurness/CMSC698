@@ -8,9 +8,22 @@ body {
 img {
   height: 200px;
 }
-h1{
-  font-family: 'Plus Jakarta Sans', serif; 
+#myTitle {
+  background: #efeee7;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#myTitle h1 {
+  font-size: 50px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,14 +34,7 @@ a {
 
 }
 
-.myTitle {
-  font-size: 50px;
-  font-family: 'Plus Jakarta Sans', serif;
-  font-weight: 300;
-  color:#000000;
-  background:#efeee7;
-  height: 220px;
-}
+
 
 button {
   border: white;
@@ -74,18 +80,3 @@ button {
   color: #efeee7;
 }
 
-/* .browse {
-  background-color: #2e5077;
-  font-family: 'Plus Jakarta Sans', serif;
-  color: #FFAF47;
-  margin-top: 20px;
-  height: 90px;
-  font-size: 70px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 10px;
-} */
-
-/* .browse:hover {
-  background-color: #57789F;
-} */
