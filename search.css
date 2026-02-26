@@ -3,6 +3,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #000000;
+  color:#efeee7;
 }
 
 .title {
@@ -62,3 +63,7 @@ button {
   color: #000000;
 }
 
+#check{
+  color: #efeee7;
+  font-family: 'Assistant', sans-serif;
+}

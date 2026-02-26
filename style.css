@@ -8,7 +8,9 @@ body {
 img {
   height: 200px;
 }
-
+h1{
+  font-family: 'Plus Jakarta Sans', serif; 
+}
 a {
   text-decoration: none;
 }
