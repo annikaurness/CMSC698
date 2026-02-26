@@ -73,7 +73,7 @@ document.getElementById("go").addEventListener("click", async () => {
   const focusLevel = document.getElementById("focus-level").value;
   const locationType = document.getElementById("in-out").value;
 
-  const response = await fetch("http://localhost:3000/search", {
+  const response = await fetch("http://localhost:8000/search", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -63,11 +63,18 @@
             results.data.forEach(row => {
                 const tr = document.createElement("tr");
     
-                Object.values(row).forEach(value => {
-                    const td = document.createElement("td");
-                    td.textContent = value;
-                    tr.appendChild(td);
-                });
+                Object.keys(row).forEach(key => {
+    const td = document.createElement("td");
+    let value = row[key];
+
+    if (key === "On Campus") {
+        td.textContent = value.trim().toLowerCase() === "true" ? "On" : "Off";
+    } else {
+        td.textContent = value;
+    }
+
+    tr.appendChild(td);
+});
     
                 tbody.appendChild(tr);
             });
