@@ -7,51 +7,69 @@ const app = express();
 const PORT = 3000;
 
 app.use(cors());
-app.use(express.json());
 
-// Helper function to read CSV
-function readCSV() {
-  return new Promise((resolve, reject) => {
-    const results = [];
-    fs.createReadStream("studySpots.csv")
-      .pipe(csv())
-      .on("data", (data) => results.push(data))
-      .on("end", () => resolve(results))
-      .on("error", (err) => reject(err));
+let studySpots = [];
+
+// Load CSV once on startup
+fs.createReadStream("study_spots.csv")
+  .pipe(csv())
+  .on("data", (row) => {
+    // Convert distance + focus to usable types
+    row["Distance from campus"] = parseFloat(row["Distance from campus"]);
+    row["Focus Level"] = parseInt(row["Focus Level"]);
+    studySpots.push(row);
+  })
+  .on("end", () => {
+    console.log("CSV loaded");
   });
-}
 
-// Search route
-app.post("/search", async (req, res) => {
-  try {
-    const filters = req.body;
-    const spots = await readCSV();
+app.get("/search", (req, res) => {
+  let results = [...studySpots];
 
-    const filtered = spots.filter((spot) => {
-      // Distance filters
-      if (filters.walking && spot.walking !== "true") return false;
-      if (filters.driving && spot.driving !== "true") return false;
-      if (filters.onCampus && spot.onCampus !== "true") return false;
+  const {
+    walking,
+    driving,
+    campus,
+    focus,
+    indoorOutdoor
+  } = req.query;
 
-      // Focus level
-      if (filters.focusLevel && spot.focusLevel !== filters.focusLevel)
-        return false;
-
-      // Indoor/Outdoor
-      if (
-        filters.locationType &&
-        spot.locationType !== filters.locationType &&
-        spot.locationType !== "both"
-      )
-        return false;
-
-      return true;
-    });
-
-    res.json(filtered);
-  } catch (error) {
-    res.status(500).json({ error: "Error reading CSV file" });
+  // Walking = under 1 mile
+  if (walking === "true") {
+    results = results.filter(spot => 
+      spot["Distance from campus"] < 1
+    );
   }
+
+  // Driving = 1 mile or more
+  if (driving === "true") {
+    results = results.filter(spot => 
+      spot["Distance from campus"] >= 1
+    );
+  }
+
+  // On Campus filter
+  if (campus === "true") {
+    results = results.filter(spot =>
+      spot["On/Off Campus"].toLowerCase() === "on"
+    );
+  }
+
+  // Focus level
+  if (focus) {
+    results = results.filter(spot =>
+      spot["Focus Level"] === parseInt(focus)
+    );
+  }
+
+  // Indoor/Outdoor
+  if (indoorOutdoor) {
+    results = results.filter(spot =>
+      spot["Indoor/Outdoor"].toLowerCase() === indoorOutdoor.toLowerCase()
+    );
+  }
+
+  res.json(results);
 });
 
 app.listen(PORT, () => {

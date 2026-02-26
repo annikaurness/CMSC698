@@ -67,3 +67,14 @@ button {
   color: #efeee7;
   font-family: 'Assistant', sans-serif;
 }
+#csvTable {
+  border-collapse: collapse;
+  width: 80%; 
+  margin: 20px auto; 
+}
+
+#csvTable th, #csvTable td {
+  border: 1px solid #efeee7; 
+  padding: 8px; 
+  text-align: left;
+}

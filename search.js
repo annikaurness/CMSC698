@@ -67,28 +67,55 @@
 //   }
 // }
 document.getElementById("go").addEventListener("click", async () => {
+
   const walking = document.getElementById("inlineCheckbox1").checked;
   const driving = document.getElementById("inlineCheckbox2").checked;
-  const onCampus = document.getElementById("inlineCheckbox3").checked;
-  const focusLevel = document.getElementById("focus-level").value;
-  const locationType = document.getElementById("in-out").value;
+  const campus = document.getElementById("inlineCheckbox3").checked;
+  const focus = document.getElementById("focus-level").value;
+  const indoorOutdoor = document.getElementById("in-out").value;
 
-  const response = await fetch("http://localhost:8000/search", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      walking,
-      driving,
-      onCampus,
-      focusLevel,
-      locationType,
-    }),
-  });
+  const params = new URLSearchParams();
 
+  if (walking) params.append("walking", "true");
+  if (driving) params.append("driving", "true");
+  if (campus) params.append("campus", "true");
+  if (focus) params.append("focus", focus);
+  if (indoorOutdoor) params.append("indoorOutdoor", indoorOutdoor);
+
+  const response = await fetch(`http://localhost:3000/search?${params}`);
   const data = await response.json();
-  console.log(data);
 
-  // You can now display results on the page
+  const table = document.getElementById("csvTable");
+  const thead = table.querySelector("thead");
+  const tbody = table.querySelector("tbody");
+
+  thead.innerHTML = "";
+  tbody.innerHTML = "";
+
+  if (data.length === 0) {
+      tbody.innerHTML = "<tr><td colspan='7'>No results found</td></tr>";
+      return;
+  }
+
+  // Headers
+  const headerRow = document.createElement("tr");
+  Object.keys(data[0]).forEach(key => {
+      const th = document.createElement("th");
+      th.textContent = key;
+      headerRow.appendChild(th);
+  });
+  thead.appendChild(headerRow);
+
+  // Rows
+  data.forEach(row => {
+      const tr = document.createElement("tr");
+
+      Object.values(row).forEach(value => {
+          const td = document.createElement("td");
+          td.textContent = value;
+          tr.appendChild(td);
+      });
+
+      tbody.appendChild(tr);
+  });
 });
