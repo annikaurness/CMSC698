@@ -11,67 +11,71 @@ app.use(cors());
 let studySpots = [];
 
 // Load CSV once on startup
-fs.createReadStream("study_spots.csv")
+fs.createReadStream("StudySpots.csv")
   .pipe(csv())
   .on("data", (row) => {
-    // Convert distance + focus to usable types
-    row["Distance from campus"] = parseFloat(row["Distance from campus"]);
-    row["Focus Level"] = parseInt(row["Focus Level"]);
+    row["On/Off Campus"] = String(row["On/Off Campus"] || "")
+      .trim()
+      .toLowerCase();
+  
+    row["Indoor/Outdoor"] = String(row["Indoor/Outdoor"] || "")
+      .trim()
+      .toLowerCase();
+  
+    row["Distance from campus"] = String(row["Distance from campus"] || "")
+      .trim()
+      .toLowerCase();
+  
+    row["Focus Level"] = String(row["Focus Level"] || "")
+      .trim();
+  
     studySpots.push(row);
   })
   .on("end", () => {
     console.log("CSV loaded");
   });
 
-app.get("/search", (req, res) => {
-  let results = [...studySpots];
+  app.get("/search", (req, res) => {
+    let results = [...studySpots];
+  
+    const { walking, driving, campus, focus, indoorOutdoor } = req.query;
+  
+    if (driving !== "true") {
+      results = results.filter(spot =>
+        spot["Distance from campus"] === "walking"
+      );
+    }
+  
+    if (driving === "true" && walking !== "true") {
+      results = results.filter(spot =>
+        spot["Distance from campus"] !== "walking"
+      );
+    }
+  
+    if (campus === "true") {
+      results = results.filter(spot =>
+        spot["On/Off Campus"] === "on"
+      );
+    }
+  
+    if (focus) {
+      results = results.filter(spot =>
+        spot["Focus Level"] === focus
+      );
+    }
+  
+    if (indoorOutdoor) {
+      results = results.filter(spot =>
+        spot["Indoor/Outdoor"] === indoorOutdoor.toLowerCase()
+      );
+    }
+  
+    res.json(results);
+  });
 
-  const {
-    walking,
-    driving,
-    campus,
-    focus,
-    indoorOutdoor
-  } = req.query;
-
-  // Walking = under 1 mile
-  if (walking === "true") {
-    results = results.filter(spot => 
-      spot["Distance from campus"] < 1
-    );
-  }
-
-  // Driving = 1 mile or more
-  if (driving === "true") {
-    results = results.filter(spot => 
-      spot["Distance from campus"] >= 1
-    );
-  }
-
-  // On Campus filter
-  if (campus === "true") {
-    results = results.filter(spot =>
-      spot["On/Off Campus"].toLowerCase() === "on"
-    );
-  }
-
-  // Focus level
-  if (focus) {
-    results = results.filter(spot =>
-      spot["Focus Level"] === parseInt(focus)
-    );
-  }
-
-  // Indoor/Outdoor
-  if (indoorOutdoor) {
-    results = results.filter(spot =>
-      spot["Indoor/Outdoor"].toLowerCase() === indoorOutdoor.toLowerCase()
-    );
-  }
-
-  res.json(results);
-});
-
+  app.get("/spots", (req, res) => {
+    res.json(studySpots);
+  });
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });

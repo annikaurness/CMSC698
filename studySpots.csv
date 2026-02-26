@@ -1,38 +1,45 @@
-Name,On/Off Campus,Indoor/Outdoor,Focus Level,Distance from campus,Description,Tags,"Website function: suggest study spots and recommend music based on criteria: noise level, location, etc"
-Library 3rd Floor Q group table,on,Indoor ,2,N/A,"Nice and tucked away, good to work with a small group of friends. Sometimes this spot gets snapped up fast. ",,"Want user to be able to sort and filter spots by location (indoor/outdoor), on/off campus, distance from campus, noise level"
-Main Green,on,Outdoor,1,N/A,Good to do readings or light work outside with friends.,Sunny,"Maybe rank focus level on a scale? 1 = casual study hang out with friends, 4 = i don't want to be disturbed at all I really need to get stuff done"
-Milwaukee-Downer room,on,Indoor ,3,N/A,"Pretty wood bookshelves and details, cozy couches",,1: looking to casually study with friends or work on a project in a group
-Steitz Atrium,on,Indoor ,2,N/A,"Lots of light, can be nice and warm in the winter because of the windows",Sunny,2: Looking to study quietly with friends 
-Il Bar Coffee,off,Indoor/Outdoor,2,Walking,The bar seating by the window is nice ,Coffee shop,3: Looking to study quietly but I don't mind talking with people passing through
-Library 1st Floor tables,on,Indoor ,1,N/A,Good for group projects. ,,4: I want a silent and more private space to study alone
-Warch 4th floor,on,Indoor ,3,N/A,"Nice individual desks, group tables, and armchairs",,
-Copper Rock,off,Indoor ,2,Walking,"If you can get one, the booths are great for studying with friends. ",Coffee shop,
-Hiett common areas,on,Indoor ,3,N/A,"Big south-facing windows, nice in the winter to get some sunlight. ",Sunny,
-Library 4th Floor Kruse Room,on,Indoor ,3,N/A,Good sunlight,Sunny,
-Lincoln Reading Room,on,Indoor ,2,N/A,"Big pretty windows, gorgeous in the fall. No food allowed in here, don't bring snacks",Sunny,
-Library 4th Floor Carrels,on,Indoor ,4,N/A,"Silent study by yourself, good for if you want to block out distractions. ",,
-Cafe,on,Indoor ,2,N/A,"Can get loud and busy around mealtimes, but the seats by the window are nice to work with outlets nearby– also great people-watching",Coffee shop,
-Briggs lobby,on,Indoor ,3,N/A,Nice view of the river. Good to sit and study during office hours in case you get stuck. ,Sunny,
-West Campus 2nd Floor,on,Indoor ,3,N/A,Big window that looks right out over the LU Arch,,
-Commodore Cafe,off,Indoor ,2,Walking,,Coffee shop,
-Colman lobby,on,Indoor ,2,N/A,,,
-Brewed Awakenings,off,Indoor/Outdoor,2,Walking,,Coffee shop,
-Warch patio,on,Outdoor,2,N/A,"Seasonal, they take these away in the winter. Tables v wobbly but nice when it's nice out ",,
-Library 2nd floor/CAS,on,Indoor ,2,N/A,"Math tutoring here, nice group tables",,
-Uncle Mike's Food Emporium,off,Indoor/Outdoor,2,Driving,"Good place to get food, outdoor patio on the restaurant part is v nice",Coffee shop,
-Youngchild 121,on,Indoor ,2,N/A,,,
-Librart 2nd Floor QRC,on,Indoor ,3,N/A,Math and computer science tutoring here,,
-Library patio,on,Outdoor,2,N/A,,,
-Youngchild Environmental Commons,on,Indoor ,3,N/A,Basically an empty classroom. Good for quiet homework with a couple friends,,
-West Campus Computer Science/Math commons ,on,Indoor ,3,N/A,Cool booths and stuff here and nice and quiet,,
-Warch Somerset room,on,Indoor ,3,N/A,Awesome windows with a nice view of the river,,
-Coffee Wizardz,off,Indoor ,2,Walking,,Coffee shop,
-Tempest Coffee,off,Indoor/Outdoor,2,Walking,,Coffee shop,
-Memorial Hall Diversity Equity & Inclusion Center ,on,Indoor ,2,N/A,Awesome couches and very cozy in the winter,Sunny,
-Library viewing/listening rooms,on,Indoor ,4,N/A,"Little rooms that require ID access, good for if you need total quiet ",,
-Library Level A,on,Indoor ,3,N/A,"Limited spots, but there's a couple of nice group tables. Level A has the periodicals collection, so it's generally nice and quiet.",,
-Bubolz Nature Preserve,off,Indoor/Outdoor,3,Driving,"Beautiful hiking/walking trails, and indoor study spaces in ""The Lodge""",,
-Appleton Public Library,off,Indoor ,3,Walking,"Recently renovated, really nice new spaces. ",,
-Main hall reading room,on,Indoor ,2,N/A,,,
-Spirit House,on,Indoor ,2,N/A,"Nice to study in a ""house house""",Sunny ,
-Conservatory couches,on,Indoor ,1,N/A,"Comfy and social, good place to study between classes/lessons in the con",,
+Name,On/Off Campus,Indoor/Outdoor,Focus Level,Distance from campus,Description,Tags
+Library 3rd Floor Q group table,On,Indoor ,2,Walking,"Nice and tucked away, good to work with a small group of friends. Sometimes this spot gets snapped up fast. ",Library
+Main Green,Off,Outdoor,1,Walking,Good to do readings or light work outside with friends.,Sunny
+Milwaukee-Downer room,On,Indoor ,3,Walking,"Pretty wood bookshelves and details, cozy couches",Library
+Steitz Atrium,On,Indoor ,2,Walking,"Lots of light, can be nice and warm in the winter because of the windows",Sunny
+Il Bar Coffee,Off,Indoor/Outdoor,2,Walking,The bar seating by the window is nice ,"Coffee shop, Food"
+Library 1st Floor tables,On,Indoor ,1,Walking,Good for group projects. ,Library
+Warch 4th floor,Off,Indoor ,3,Walking,"Nice individual desks, group tables, and armchairs",
+Copper Rock (College Avenue),On,Indoor ,1,Walking,"If you can get one, the booths are great for studying with friends. It can get pretty loud in here if it's busy so not the best if you don't have good headphones. ","Coffee shop, Food"
+Hiett common areas,On,Indoor ,3,Walking,"Big south-facing windows, nice in the winter to get some sunlight. ",Sunny
+Library 4th Floor Kruse Room,On,Indoor ,3,Walking,Good sunlight,"Sunny, Library"
+Lincoln Reading Room,On,Indoor ,2,Walking,"Big pretty windows, gorgeous in the fall. No food allowed in here, don't bring snacks","Sunny, Library"
+Library 4th Floor Carrels,On,Indoor ,4,Walking,"Silent study by yourself, good for if you want to block out distractions. ",Library
+Cafe,On,Indoor ,2,Walking,"Can get loud and busy around mealtimes, but the seats by the window are nice to work with outlets nearby– also great people-watching","Coffee shop, Food"
+Briggs lobby,On,Indoor ,3,Walking,Nice view of the river. Good to sit and study during office hours in case you get stuck. ,Sunny
+West Campus 2nd Floor,On,Indoor ,3,Walking,Big window that looks right out over the LU Arch,
+Commodore Cafe,Off,Indoor ,2,Walking,,Coffee shop
+Colman lobby,On,Indoor ,2,Walking,"Good variety of seating: booths, couches, and chairs/tables. Sometimes big groups in the booths can get loud. ",
+Brewed Awakenings,Off,Indoor/Outdoor,2,Walking,"Good food, can get v busy on weekends. ","Coffee shop, Food"
+Warch patio,On,Outdoor,2,Walking,"Seasonal, they take these away in the winter. Tables v wobbly but nice when it's nice out ",
+Library 2nd floor/CAS,On,Indoor ,2,Walking,"Math tutoring here, nice group tables",Library
+Uncle Mike's Food Emporium,Off,Indoor/Outdoor,2,Driving,"Good place to get food, outdoor patio on the restaurant part is v nice","Coffee shop, Food"
+Youngchild 121,On,Indoor ,2,Walking,"Lots of little group tables, fantastic place to lock in if empty. Physics, bio, and chem tutoring held here. ",
+Librart 2nd Floor QRC,On,Indoor ,1,Walking,Math and computer science tutoring here,Library
+Library patio,On,Outdoor,2,Walking,,Library
+Youngchild Environmental Commons,On,Indoor ,3,Walking,Basically an empty classroom. Good for quiet homework with a couple friends,
+West Campus Computer Science/Math commons ,On,Indoor ,3,Walking,Cool booths and stuff here and nice and quiet,
+Warch Somerset room,On,Indoor ,3,Walking,Awesome windows with a nice view of the river,
+Coffee Wizardz,Off,Indoor ,2,Walking,,Coffee shop
+Tempest Coffee,Off,Indoor/Outdoor,2,Walking,Very nice view of the river. ,Coffee shop
+Memorial Hall Diversity Equity & Inclusion Center ,On,Indoor ,2,Walking,Awesome couches and very cozy in the winter,Sunny
+Library viewing/listening rooms,On,Indoor ,4,Walking,"Little rooms that require ID access, good for if you need total quiet ",Library
+Library Level A,On,Indoor ,3,Walking,"Limited spots, but there's a couple of nice group tables. Level A has the periodicals collection, so it's generally nice and quiet.",Library
+Bubolz Nature Preserve,Off,Indoor/Outdoor,3,Driving,"Beautiful hiking/walking trails, and indoor study spaces in ""The Lodge""",
+Appleton Public Library,Off,Indoor ,3,Walking,"Recently renovated, really nice new spaces, and some good private meeting rooms. ",Library
+Main hall reading room,On,Indoor ,2,Walking,Nice couches and wingback armchairs. ,
+Spirit House,On,Indoor ,2,Walking,"Nice to study in a ""house house""",Sunny 
+Conservatory couches,On,Indoor ,1,Walking,"Comfy and social, good place to study between classes/lessons in the con",
+International House,On,Indoor ,2,Walking,,
+2nd Floor Wellness ,On,Indoor ,2,Walking,"Nice round table and some couches, typically pretty quiet. Smells like pool. ",
+Copper Rock (North Side),Off,Indoor ,2,Driving,"Usually quieter than the copper rock on College, booths are less comfy. ","Coffee Shop, Food"
+Trout Museum Coffee Shop,Off,Indoor ,0,Walking,New!,Coffee Shop 
+Starbucks (College Ave),Off,Indoor ,2,Walking,It's a Starbucks,"Coffee Shop, Food"
+Acoca Coffee,Off,Indoor ,2,Walking,A little farther off campus,Coffee Shop
+Seth's Coffee (mall),Off,Indoor ,3,Driving,Hidden Seth's coffee!,Coffee Shop
