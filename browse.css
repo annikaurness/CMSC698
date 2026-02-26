@@ -61,3 +61,15 @@ button {
     justify-content: space-around;
 }
 
+#csvTable {
+    border-collapse: collapse;
+    width: 80%; 
+    margin: 20px auto; 
+}
+
+#csvTable th, #csvTable td {
+    border: 1px solid #efeee7; 
+    padding: 8px; 
+    text-align: left;
+}
+
